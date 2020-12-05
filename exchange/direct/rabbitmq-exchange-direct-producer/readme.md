@@ -29,4 +29,5 @@ Execute rabbitmq-producer project.
 ```
 ###### To See detail information of each queue.
 http://localhost:15672/
+---------
 https://github.com/ckgauro/rabbitMQExamples/blob/master/simpleRabbitMQMessage/rabbit-mq-message/ReadMe.md
