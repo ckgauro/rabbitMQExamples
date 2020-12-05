@@ -4,6 +4,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Service;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 /**
  * @author Chandra
  */
@@ -18,7 +20,7 @@ public class FixedRateConsumer {
         log.info("Consuming {} on thread {}", message, Thread.currentThread().getName());
 
         try {
-            Thread.sleep(5000);
+            Thread.sleep(ThreadLocalRandom.current().nextLong(2000));
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
