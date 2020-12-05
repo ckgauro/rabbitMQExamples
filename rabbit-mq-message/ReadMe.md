@@ -13,6 +13,10 @@
 <img src="images/Screen.png">
 
 ```
-
 Execute rabbitmq-producer project.
+
 ```
+###### To See detail information of each queue.
+   Click on queue then click on *Get Message(s) button. You Can see all the information.
+http://localhost:15672/#/queues/%2F/course.employee
+
