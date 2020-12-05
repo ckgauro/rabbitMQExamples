@@ -21,10 +21,10 @@ public class PictureProducer {
         this.rabbitTemplate = rabbitTemplate;
     }
 
-    void sendMessage(Picture picture){
-
+    public void sendMessage(Picture picture){
         try {
-            rabbitTemplate.convertAndSend("x.picture", picture.getType(), objectMapper.writeValueAsString(picture));
+            rabbitTemplate.convertAndSend("x.picture", picture.getType(),
+                    objectMapper.writeValueAsString(picture));
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
