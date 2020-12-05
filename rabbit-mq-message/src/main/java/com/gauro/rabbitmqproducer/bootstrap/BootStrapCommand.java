@@ -12,7 +12,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class BootStrapCommand  implements CommandLineRunner {
     private final HelloRabbitProducer helloRabbitProducer;
-
     public BootStrapCommand(HelloRabbitProducer helloRabbitProducer) {
         this.helloRabbitProducer = helloRabbitProducer;
     }
