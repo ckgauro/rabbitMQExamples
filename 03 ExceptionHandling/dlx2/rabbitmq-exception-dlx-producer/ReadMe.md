@@ -1,5 +1,5 @@
 ### Which DLX Solution to Choose?
-####### Choose Only One Solution!
+###### Choose Only One Solution!
 
 We can do automatic rejection by throwing AmqpRejectAndDontRequeueException, and manual rejection by using Channel and channel.basicReject(). Notice that on manual rejection, you have to change configuration on Spring's application.properties.
 
