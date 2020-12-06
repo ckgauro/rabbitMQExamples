@@ -30,7 +30,7 @@ public class PictureProducer {
             var json=objectMapper.writeValueAsString(picture);
             var routingKey=sb.toString();
             log.info("Routing  values for {} is ====>{}",picture.toString(), routingKey);
-            rabbitTemplate.convertAndSend("x.picture",routingKey,picture);
+            rabbitTemplate.convertAndSend("x.picture",routingKey,json);
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }

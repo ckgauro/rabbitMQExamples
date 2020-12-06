@@ -29,17 +29,27 @@ public class BootStrap  implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         log.info("*************************Called*********");
-        IntStream.rangeClosed(1, 30)
+               IntStream.rangeClosed(1, 100)
                 .forEach(i -> pictureProducer.sendMessage(
                         Picture.builder()
                                 .name("picture " + i)
-                                .size(ThreadLocalRandom.current().nextLong(1, 1001))
+                                .size(ThreadLocalRandom.current().nextLong(1, 10001))
                                 .source(SOURCES.get(i % SOURCES.size()))
+                                //.source("web")
                                 .type(TYPES.get(i % TYPES.size()))
                                 .build()
                 ));
 
-
+//        for (int i = 0; i < 10; i++) {
+//            var p = new Picture();
+//
+//            p.setName("Picture " + i);
+//            p.setSize(ThreadLocalRandom.current().nextLong(1, 10001));
+//            p.setSource(SOURCES.get(i % SOURCES.size()));
+//            p.setType(TYPES.get(i % TYPES.size()));
+//
+//            pictureProducer.sendMessage(p);
+//        }
 
     }
 }
