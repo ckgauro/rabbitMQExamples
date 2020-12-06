@@ -3,6 +3,7 @@ package com.gauro.rabbitmqexceptiondlxconsumer.consumer;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.gauro.rabbitmqexceptiondlxconsumer.domain.Picture;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.AmqpRejectAndDontRequeueException;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Service;
 
@@ -21,7 +22,8 @@ public class MyPictureImageConsumer {
         try {
             var picture=objectMapper.readValue(message, Picture.class);
             if(picture.getSize()>9000){
-                throw new IllegalArgumentException("Picture size is too large: "+picture.toString());
+               // throw new IllegalArgumentException("Picture size is too large: "+picture.toString());
+                throw new AmqpRejectAndDontRequeueException("Picture size is too large: "+picture.toString());
             }
         } catch (IOException e) {
             e.printStackTrace();
