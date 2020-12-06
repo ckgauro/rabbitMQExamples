@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6ca0098-c6e3-49dd-bc57-1fb0d5d0e2d4" name="Default Changelist" comment="Exchange Topic producer">
-      <change afterPath="$PROJECT_DIR$/../../../03 ExceptionHandling/dlx/rabbitmq-exception-dlx/src/main/java/com/gauro/rabbitmqexceptiondlx/bootstrap/BootStrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../03 ExceptionHandling/dlx/rabbitmq-exception-dlx/src/main/java/com/gauro/rabbitmqexceptiondlx/domain/Picture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../03 ExceptionHandling/dlx/rabbitmq-exception-dlx/src/main/java/com/gauro/rabbitmqexceptiondlx/producer/MyPictureProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../03 ExceptionHandling/dlx/rabbitmq-exception-dlx-consumer/src/main/java/com/gauro/rabbitmqexceptiondlxconsumer/consumer/MyPictureImageConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../03 ExceptionHandling/dlx/rabbitmq-exception-dlx-consumer/src/main/java/com/gauro/rabbitmqexceptiondlxconsumer/domain/Picture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
