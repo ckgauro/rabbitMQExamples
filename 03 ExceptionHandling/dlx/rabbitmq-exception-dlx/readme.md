@@ -10,13 +10,10 @@ Message that is sent to a queue that does not exist.
 * Message is rejected by another queue exchange.
 * Message reaches a threshold read counter number, because it is not consumed. Sometimes this is called a "back out queue".
 
-A Topic  exchange can be represented graphically as follows:
-## Schema
-<img src="images/schema.png">
 
 ## Add following Queues
 
-<img src="images/queues.png">
+<img src="images/queus.png">
 
 ######  We have to add following queues
 * q.mypicture.dlx
