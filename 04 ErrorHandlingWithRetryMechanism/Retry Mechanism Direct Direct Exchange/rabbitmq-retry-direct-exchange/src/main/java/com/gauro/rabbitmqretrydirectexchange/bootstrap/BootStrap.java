@@ -28,7 +28,7 @@ public class BootStrap implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         log.info("*************************Called*********");
-        IntStream.rangeClosed(1, 100)
+        IntStream.rangeClosed(1, 10)
                 .forEach(i -> retryPictureProducer.sendMessage(
                         Picture.builder()
                                 .name("picture " + i)
